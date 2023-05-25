@@ -1,6 +1,6 @@
 body {
   font-family: "Alice", serif;
-  background-color: white;
+  background-color: rgba(39, 32, 68, 0.3);
 }
 .container {
   max-width: 1400px;
@@ -57,7 +57,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
 }
 footer h3 {
   font-weight: 700;
@@ -87,13 +86,48 @@ footer ul {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
 }
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 2fr 2fr;
+}
 
+main h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+main h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0;
+}
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+main {
+  background-color: white;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
@@ -111,5 +145,15 @@ section {
     font-size: 8px;
     padding: 8px 16px;
     font-weight: 500;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
+  }
+  img {
+    display: none;
   }
 }
