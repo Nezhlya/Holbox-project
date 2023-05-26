@@ -102,43 +102,87 @@ section {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .card {
-  background-color: white;
+  background: white;
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.card h3 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-  color: #272044;
-}
-.card a {
-  font-weight: 700;
-  background-color: #272044;
-  color: white;
-  padding: 16px 32px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 32px;
-}
-main h3 {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 5px;
-  color: #272044;
-  opacity: 0.3;
-  text-transform: uppercase;
+.card-body {
+  padding: 30px;
   margin: 0;
+  
+}
+
+.card a {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+  padding: 16px;
+  background-color: #272044;
+  text-decoration: none;
+}
+.card .grid {
+  grid-gap: 0;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+.img-rspnsv {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
 }
 main h2 {
   font-weight: 700;
   font-size: 40px;
-  line-height: 50px;
+  line-height: 1.5;
   margin: 0;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  margin: 0;
+  color: #272044;
+  padding: 5px;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1;
+  color: #272044;
+  padding-top: 15px;
 }
 main p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+  margin: 0;
+  padding: 10px;
 }
 main {
   background-color: white;
@@ -148,7 +192,7 @@ img {
   display: block;
   margin: 0 auto;
 }
-.accommodation {
+.second {
   background-color: rgba(39, 32, 68, 0.1);
 }
 .text-center {
@@ -181,5 +225,11 @@ img {
   }
   img {
     display: none;
+  }
+  .img-rspnsv {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
