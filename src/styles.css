@@ -101,18 +101,15 @@ section {
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 .card {
   background: white;
   margin: 30px 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .card-body {
   padding: 30px;
   margin: 0;
-  
+  max-width: 100%;
 }
 
 .card a {
@@ -136,6 +133,9 @@ section {
   width: 100%;
   aspect-ratio: 1 /1;
 }
+.instagram-embed {
+  margin: 30px 0;
+}
 .img-rspnsv {
   width: 100%;
   display: block;
@@ -146,6 +146,7 @@ main h2 {
   font-size: 40px;
   line-height: 1.5;
   margin: 0;
+  
 }
 main h3 {
   font-weight: 700;
@@ -198,7 +199,7 @@ img {
 .text-center {
   text-align: center;
 }
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
